@@ -15,10 +15,14 @@ export class TauxChangeService {
       const nvlChange = this.txchange.value + rChange;
 
       if (this.txFixe && Math.abs((nvlChange - this.txFixe) / this.txFixe) > 0.02) {
-        this.txFixe = null;  // Disable fixed rate
+        this.txFixe = null;
       }
 
       this.txchange.next(this.txFixe ?? nvlChange);
     }, 3000);
+  }
+  setTauxFix(taux: number): void {
+    this.txFixe = taux;
+    this.txchange.next(taux);
   }
 }

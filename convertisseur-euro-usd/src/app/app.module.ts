@@ -15,6 +15,7 @@ import { AppComponent } from './app.component';
 import { TauxChangeComponent } from './taux-change/taux-change.component';
 import { ConversionComponent } from './conversion/conversion.component';
 import { ConversionSwitchComponent } from './conversion-switch/conversion-switch.component';
+import { TauxFixeComponent } from './taux-fixe/taux-fixe.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ConversionSwitchComponent } from './conversion-switch/conversion-switch
     AppComponent,
     TauxChangeComponent,
     ConversionComponent,
-    ConversionSwitchComponent
+    ConversionSwitchComponent,
+    TauxFixeComponent
   ],
   imports: [
     BrowserModule,

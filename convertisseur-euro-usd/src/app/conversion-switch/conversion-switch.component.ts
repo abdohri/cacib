@@ -28,6 +28,7 @@ export class ConversionSwitchComponent {
     if (this.isEuro) {
       this.montantCible = this.montant * tauxActuel;
     } else {
+      debugger
       this.montantCible = this.montant / tauxActuel;
     }
   }

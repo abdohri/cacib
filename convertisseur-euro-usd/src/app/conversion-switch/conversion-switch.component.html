@@ -1,6 +1,6 @@
 <mat-card>
   <mat-radio-group  (change)="selectionDevice($event)">
-    <mat-radio-button value="EUR">EUR</mat-radio-button>
+    <mat-radio-button value="EUR" checked>EUR</mat-radio-button>
     <mat-radio-button value="USD">USD</mat-radio-button>
   </mat-radio-group>
   <div *ngIf="isEuro">
