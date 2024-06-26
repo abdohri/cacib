@@ -12,11 +12,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TauxChangeComponent } from './taux-change/taux-change.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TauxChangeComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       <span>Convertisseur euro / dollar</span>
     </mat-toolbar>
     <div class="container">
-
+     <app-taux-change></app-taux-change>
     </div>
   `
 })
