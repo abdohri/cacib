@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
     <div class="container">
      <app-taux-change></app-taux-change>
       <app-conversion></app-conversion>
+      <app-conversion-switch></app-conversion-switch>
     </div>
   `
 })

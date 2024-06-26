@@ -1,1 +1,20 @@
-<p>conversion-switch works!</p>
+<mat-card>
+  <mat-radio-group  (change)="selectionDevice($event)">
+    <mat-radio-button value="EUR">EUR</mat-radio-button>
+    <mat-radio-button value="USD">USD</mat-radio-button>
+  </mat-radio-group>
+  <div *ngIf="isEuro">
+    <mat-form-field appearance="fill">
+      <mat-label>Montant en EUR</mat-label>
+      <input matInput type="number" [(ngModel)]="montant" (input)="convertirDevise()" />
+    </mat-form-field>
+    <p>Equivalent en USD: <b>{{ montantCible | number:'1.2-2' }}</b></p>
+  </div>
+  <div *ngIf="!isEuro">
+    <mat-form-field appearance="fill">
+      <mat-label>Montant en USD</mat-label>
+      <input matInput type="number" [(ngModel)]="montant" (input)="convertirDevise()" />
+    </mat-form-field>
+    <p>Equivalent en EUR: <b>{{ montantCible | number:'1.2-2' }}</b></p>
+  </div>
+</mat-card>
