@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
     </mat-toolbar>
     <div class="container">
      <app-taux-change></app-taux-change>
+      <app-conversion></app-conversion>
     </div>
   `
 })

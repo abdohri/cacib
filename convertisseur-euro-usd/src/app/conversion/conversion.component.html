@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-form-field >
+    <mat-label>Le montant en EUR : </mat-label>
+    <input matInput type="number" [(ngModel)]="montantEnEuro" (input)="convertirToDolar()" />
+  </mat-form-field>
+  <p>
+    L'equivalent en Dolar : <b>{{ montantEnDolar | number:'1.2-2' }}</b>
+  </p>
+</mat-card>
